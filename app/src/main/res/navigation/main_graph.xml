@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/laptopFragment">
+
+    <fragment
+        android:id="@+id/laptopFragment"
+        android:name="ar.com.glapp.ui.laptop.LaptopFragment"
+        android:label="Laptop App"
+        tools:layout="@layout/fragment_laptop">
+        <action
+            android:id="@+id/action_laptopFragment_to_laptopDetailFragment"
+            app:destination="@id/laptopDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laptopDetailFragment"
+        android:name="ar.com.glapp.ui.laptopdetail.LaptopDetailFragment"
+        android:label="Laptop Details"
+        tools:layout="@layout/fragment_laptop_detail">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+</navigation>
