@@ -1,8 +1,6 @@
 package ar.com.glapp.data.remote
 
-import ar.com.glapp.core.Resource
 import ar.com.glapp.data.model.Laptop
-import ar.com.glapp.repository.RetrofitClient
 import ar.com.glapp.repository.WebService
 
 /**
