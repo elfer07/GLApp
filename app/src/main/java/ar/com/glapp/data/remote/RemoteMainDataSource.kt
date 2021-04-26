@@ -11,6 +11,4 @@ import ar.com.glapp.repository.WebService
 class RemoteMainDataSource(private val webService: WebService) {
 
     suspend fun getLaptops(): List<Laptop> = webService.getLaptops()
-
-    suspend fun getLapto(): Resource<List<Laptop>> = Resource.Success(RetrofitClient.webservice.getLapto())
 }
